@@ -27,7 +27,6 @@ st = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
 
 cn = g_count(st[0])
 for i in range(1, len(st)):
-    print(st[i])
     if cn != g_count(st[i]):
                print('Пам парам')
                break
