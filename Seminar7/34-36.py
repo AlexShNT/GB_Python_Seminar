@@ -21,13 +21,18 @@ def g_count(st):
     for i in q:
         res += st.count(i)
 
-    print(st, res)
+    return res
 
-st = 'пара-ра-рам рам-пам-папам па-ра-па-да'
-cn = 0
-for i in st.split():
-    g_count(i)
+st = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
 
+cn = g_count(st[0])
+for i in range(1, len(st)):
+    print(st[i])
+    if cn != g_count(st[i]):
+               print('Пам парам')
+               break
+else:
+    print('Парам пам-пам')
 
 
 '''
